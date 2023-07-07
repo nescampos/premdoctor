@@ -60,10 +60,12 @@ illness = st.text_area("Describe your ailment or disease in detail to help you."
 
 #if illness:
 if st.button("Ask Prem Doctor"):
-  healthhelper_template = """You are a bot that helps with health issues. 
-  As an assistant, you must answer all questions related to health, solve any medical ailment or indicate the type of doctor the person should see. 
-  If you don't know something, just say 'I don't currently have the information to help'. 
-  Do not assume things of which you have no information.
+  healthhelper_template = """You are a bot that helps with health problems.
+    As an assistant, you must answer all health-related questions, resolve any medical ailments, or indicate the type of doctor the person should see.
+    The person will write their symptoms to you and you will have to generate a possible diagnosis or diseases they may have.
+    When you get the info from the person, give the best possible diagnosis. If necessary, tell the person to be more precise in describing their problem.
+    Deliver the best result from the information you have available.
+    Finally, tell the person that they need to see a real doctor to be sure of their problem and, if possible, what type of doctor they should see.
   Question: {question}"""
   
   BOT_PROMPT = PromptTemplate(
