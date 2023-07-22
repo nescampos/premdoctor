@@ -13,6 +13,7 @@ os.environ["OPENAI_API_KEY"] = st.secrets["openai_key"]
 openai_url = st.secrets["openai_url"]
 max_tokens = st.secrets["max_tokens"]
 
+
 if max_tokens == None:
     max_tokens = 128
 
