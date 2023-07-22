@@ -6,9 +6,6 @@ The idea of this project is to save people time and money and to know which doct
 ## Licence
 [MIT](./LICENCE)
 
-## Demo
-Video (with an explanation): https://www.youtube.com/watch?v=oXxb89JqWV8 
-
 ## How works
 
 1. Install [PremAI](https://www.premai.io/) in your computer or a server.
